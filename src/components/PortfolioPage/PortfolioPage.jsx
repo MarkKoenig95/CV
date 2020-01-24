@@ -32,6 +32,17 @@ function PortfolioPage() {
           of implementing it. More detail can be found in the linked blog post."
         </p>
       </ProjectTile>
+
+      <ProjectTile
+        title="My CV Website"
+        sourceCodeLink="https://github.com/MarkKoenig95/CV"
+        liveLink="/"
+      >
+        <p>
+          This website was made with react. If you would like to see the source
+          code for it please click the link.
+        </p>
+      </ProjectTile>
     </div>
   );
 }
