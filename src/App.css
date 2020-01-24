@@ -1,38 +1,208 @@
-.App {
+/****************************************** Global *****************************************************/
+:root {
+  --main-green: rgb(48, 122, 23);
+  --darker-green: rgb(38, 107, 17);
+  --main-blue: rgb(66, 100, 95);
+  --tile-color: rgb(150, 174, 179);
+}
+
+/****************************************** Nav **************************************************************/
+nav {
+  background-color: var(--main-blue);
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  width: 100%;
+}
+
+ul.menu li {
+  display: inline;
+  margin: 5px;
+  text-align: right;
+}
+
+/****************************************** Body *********************************************************/
+
+body {
+  background-color: rgb(30, 37, 36);
+  color: rgb(206, 206, 206);
+  font: 15px "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+#background-image {
+  position: absolute;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+/****************************************** Personal Info ***************************************************/
+#personal-info {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: var(--tile-color);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 4px 4px rgb(126, 147, 151);
+  font: 15px "Montserrat";
+  margin: 20px;
+  outline: 0 none;
+  padding: 10px;
+  position: relative;
+  transition: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:hover {
+  box-shadow: 2px 2px rgb(126, 147, 151);
+  left: 2px;
+  top: 2px;
+}
+
+button:active {
+  box-shadow: 0px 0px rgb(126, 147, 151);
+  left: 4px;
+  top: 4px;
+}
+
+/****************************************** Experience *****************************************/
+
+table {
+  border-collapse: collapse;
+}
+
+td.dates {
+  text-align: center;
+  vertical-align: top;
+}
+
+table,
+tr,
+td {
+  border: 2px solid var(--main-blue);
+  padding: 5px;
+}
+
+/****************************************** General ***********************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-green);
+  font-family: "Roboto Mono";
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.tab {
+  margin-left: 40px;
+}
+
+ul.custom-dot li::before {
+  content: "\2022";
+  color: var(--main-green);
+  display: inline-block;
+  font-weight: bold;
+  margin-left: -1rem;
+  text-align: center;
+  width: 1rem;
+}
+
+img {
+  margin: 10px;
+}
+
+a:link {
+  color: var(--main-green);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--darker-green);
+  text-decoration: underline;
+}
+
+.tile {
+  background-color: var(--tile-color);
+  border-radius: 7px;
+  color: black;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  text-align: left;
+  width: auto;
+  max-width: 500px;
+}
+
+.info {
+  transition: max-width 0.2s ease-out;
+  height: auto;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.hide {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+}
+
+#profile-pic {
+  margin: auto;
+  width: 50%;
+}
+
+#personal-info-tile {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width: 976px) {
+  #personal-info-tile {
+    margin: 2%;
+    width: 40%;
+  }
+  .tile {
+    margin: 2%;
+    width: 40%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  #personal-info-tile {
+    width: 90%;
+    margin: 2%;
   }
-  to {
-    transform: rotate(360deg);
+  .tile {
+    margin: 2%;
+    width: 90%;
   }
 }
