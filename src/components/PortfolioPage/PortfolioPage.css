@@ -1,0 +1,37 @@
+.profile-page {
+  margin: auto;
+  width: 1150px;
+}
+
+.project-description {
+  margin: 15px 0px;
+}
+
+.live-link {
+  float: right;
+}
+
+.source-link {
+  float: left;
+}
+
+@media (max-width: 1160px) {
+  .profile-page {
+    width: 640px;
+  }
+}
+
+@media (max-width: 740px) {
+  .profile-page {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .live-link,
+  .source-link {
+    display: block;
+    float: none;
+    margin-top: 10px;
+  }
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import "./PersonalInfo.css";
 
 function PersonalInfo() {
   return (
     <div>
-      <div id="personal-info-tile" className="tile">
+      <div id="personal-info" className="tile">
         <img
           id="profile-pic"
           src="./images/markkoenig.png"

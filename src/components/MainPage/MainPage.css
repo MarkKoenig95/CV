@@ -1,0 +1,67 @@
+hr {
+  border: 1px solid var(--main-blue);
+  width: 75%;
+}
+
+/**************************************** Tile ****************************************/
+
+.info {
+  transition: max-width 0.2s ease-out;
+  height: auto;
+  max-width: 500px;
+  max-height: 600px;
+}
+
+.hide {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+}
+
+button {
+  background-color: var(--tile-color);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 4px 4px rgb(126, 147, 151);
+  font: 15px "Montserrat";
+  margin: 20px;
+  outline: 0 none;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: none;
+}
+
+button:hover {
+  box-shadow: 2px 2px rgb(126, 147, 151);
+  left: 2px;
+  top: 2px;
+}
+
+button:active {
+  box-shadow: 0px 0px rgb(126, 147, 151);
+  left: 4px;
+  top: 4px;
+}
+
+@media (max-width: 976px) {
+  #personal-info {
+    margin: 2%;
+    width: 40%;
+  }
+  .tile {
+    margin: 2%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  #personal-info {
+    width: 90%;
+    margin: 2%;
+  }
+  .tile {
+    margin: 2%;
+    width: 90%;
+  }
+}

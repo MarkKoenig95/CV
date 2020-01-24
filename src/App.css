@@ -17,7 +17,8 @@ nav {
 
 ul.menu li {
   display: inline;
-  margin: 5px;
+  font-size: 1.3rem;
+  margin: 20px;
   text-align: right;
 }
 
@@ -33,71 +34,20 @@ body {
 
 #background-image {
   position: absolute;
-  width: 100%;
+  width: 97%;
 }
 
-main {
+.main-content {
   position: relative;
   top: 0;
   width: 100%;
-}
-
-/****************************************** Personal Info ***************************************************/
-#personal-info {
-  text-align: center;
-}
-
-button {
-  background-color: var(--tile-color);
-  border: none;
-  border-radius: 7px;
-  box-shadow: 4px 4px rgb(126, 147, 151);
-  font: 15px "Montserrat";
-  margin: 20px;
-  outline: 0 none;
-  padding: 10px;
-  position: relative;
-  transition: none;
-}
-
-button:hover {
-  box-shadow: 2px 2px rgb(126, 147, 151);
-  left: 2px;
-  top: 2px;
-}
-
-button:active {
-  box-shadow: 0px 0px rgb(126, 147, 151);
-  left: 4px;
-  top: 4px;
-}
-
-/****************************************** Experience *****************************************/
-
-table {
-  border-collapse: collapse;
-}
-
-td.dates {
-  text-align: center;
-  vertical-align: top;
-}
-
-table,
-tr,
-td {
-  border: 2px solid var(--main-blue);
-  padding: 5px;
 }
 
 /****************************************** General ***********************************************/
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: var(--main-green);
   font-family: "Roboto Mono";
   font-weight: bold;
@@ -116,7 +66,7 @@ ul {
 }
 
 .tab {
-  margin-left: 40px;
+  margin: 10px 40px;
 }
 
 ul.custom-dot li::before {
@@ -133,76 +83,39 @@ img {
   margin: 10px;
 }
 
-a:link {
-  color: var(--main-green);
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--main-blue);
+a {
+  color: darkgray;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--darker-green);
-  text-decoration: underline;
+  color: gray;
+  text-decoration: none;
 }
+
+/****************************************** Tile ***********************************************/
 
 .tile {
   background-color: var(--tile-color);
   border-radius: 7px;
   color: black;
   float: left;
-  margin: 20px;
+  margin: 15px;
   padding: 20px;
+  position: relative;
   overflow: hidden;
   text-align: left;
   width: auto;
   max-width: 500px;
 }
 
-.info {
-  transition: max-width 0.2s ease-out;
-  height: auto;
-  max-width: 500px;
-  max-height: 400px;
+.tile a {
+  color: var(--main-green);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.hide {
-  max-height: 0;
-  max-width: 0;
-  overflow: hidden;
-}
-
-#profile-pic {
-  margin: auto;
-  width: 50%;
-}
-
-#personal-info-tile {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
-}
-
-@media (max-width: 976px) {
-  #personal-info-tile {
-    margin: 2%;
-    width: 40%;
-  }
-  .tile {
-    margin: 2%;
-    width: 40%;
-  }
-}
-
-@media (max-width: 700px) {
-  #personal-info-tile {
-    width: 90%;
-    margin: 2%;
-  }
-  .tile {
-    margin: 2%;
-    width: 90%;
-  }
+.tile a:hover {
+  color: var(--darker-green);
+  text-decoration: none;
 }
