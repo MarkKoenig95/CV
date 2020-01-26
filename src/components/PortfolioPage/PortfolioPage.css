@@ -3,6 +3,12 @@
   width: 1150px;
 }
 
+.section-title {
+  float: left;
+  margin-left: 1.2%;
+  width: 98%;
+}
+
 .project-description {
   margin: 15px 0px;
 }
@@ -18,6 +24,9 @@
 @media (max-width: 1160px) {
   .profile-page {
     width: 640px;
+  }
+  .tile {
+    max-width: 1000px;
   }
 }
 

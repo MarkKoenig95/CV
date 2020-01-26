@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainPage from "./components/MainPage/MainPage";
@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <img id="background-image" src="./images/CodeBackground.png" alt="" />
       <div className="main-content">
-        <img id="background-image" src="./images/CodeBackground.png" alt="" />
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Switch>
             <Route exact path="/">
               <MainPage />
@@ -21,7 +21,7 @@ function App() {
               <Portfolio />
             </Route>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
       <Footer />
     </div>

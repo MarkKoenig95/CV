@@ -1,5 +1,5 @@
 import React from "react";
-import "./ExperienceInfo.css";
+import "./style/ExperienceInfo.css";
 
 function ExperienceInfo(props) {
   return (

@@ -3,7 +3,7 @@ import PersonalInfo from "./PersonalInfo";
 import InfoButton from "./InfoButton";
 import ProficiencyBar from "./ProficiencyBar";
 import ExperienceInfo from "./ExperienceInfo";
-import "./MainPage.css";
+import "./style/MainPage.css";
 
 function MainPage() {
   const [curDisplay, setCurDisplay] = useState("Objectives");
@@ -39,6 +39,20 @@ function MainPage() {
           <ul className="custom-dot">
             <li>
               Attended Waukesha North High School and graduated with Honors
+            </li>
+          </ul>
+          <h3>January 2020 | Certificate of completion</h3>
+          <ul className="custom-dot">
+            <li>The Complete 2020 Web Development Bootcamp on Udemy.com</li>
+            <li>
+              <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                Click here to see the course
+              </a>
+            </li>
+            <li>
+              <a href="./files/Certificate of Completion.pdf">
+                Click here to see the Certificate
+              </a>
             </li>
           </ul>
         </InfoButton>

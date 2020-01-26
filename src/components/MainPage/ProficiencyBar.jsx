@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProficiencyBar.css";
+import "./style/ProficiencyBar.css";
 
 function ProficiencyBar(props) {
   const dots = [];

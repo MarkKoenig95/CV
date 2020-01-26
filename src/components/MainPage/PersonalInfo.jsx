@@ -1,5 +1,5 @@
 import React from "react";
-import "./PersonalInfo.css";
+import "./style/PersonalInfo.css";
 
 function PersonalInfo() {
   return (
