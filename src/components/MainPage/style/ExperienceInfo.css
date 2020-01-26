@@ -12,13 +12,13 @@ p.job-duration {
   float: left;
   text-align: center;
   transform: translate(0%, 50%);
-  width: 16%;
+  width: 12%;
 }
 
 .job-info {
   float: right;
   padding: 10px;
-  width: 77%;
+  width: 83%;
 }
 
 p.job-title {

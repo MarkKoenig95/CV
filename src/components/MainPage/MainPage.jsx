@@ -6,7 +6,7 @@ import ExperienceInfo from "./ExperienceInfo";
 import "./style/MainPage.css";
 
 function MainPage() {
-  const [curDisplay, setCurDisplay] = useState("Objectives");
+  const [curDisplay, setCurDisplay] = useState("Objective");
 
   function handleClick(id, title) {
     moveDown(document.getElementById(id));
@@ -41,7 +41,7 @@ function MainPage() {
               Attended Waukesha North High School and graduated with Honors
             </li>
           </ul>
-          <h3>January 2020 | Certificate of completion</h3>
+          <h3>January 2020 | Certificate of Completion</h3>
           <ul className="custom-dot">
             <li>The Complete 2020 Web Development Bootcamp on Udemy.com</li>
             <li>
@@ -66,15 +66,15 @@ function MainPage() {
         >
           <ExperienceInfo
             company="Code For Cash"
-            duration="6/2019 to 12/2019"
+            duration="2019 to 2020"
             location="Remote"
-            title="Developer/Contractor"
+            title="Developer"
             description="Providing assistance developing various applications to hasten the hiring proccess of developers for recruiters."
           />
 
           <ExperienceInfo
             company="Graef Inc."
-            duration="9/2015 to 8/2018"
+            duration="2015 to 2018"
             location="Milwaukee, Wisconsin"
             title="CAD/BIM Technician and Plumbing Designer (CPDT)"
             description="Engineering plumbing systems for commercial buildings and producing construction documents based on that design."
@@ -82,7 +82,7 @@ function MainPage() {
 
           <ExperienceInfo
             company="Pro-Database Developers"
-            duration="12/2014 to 4/2015"
+            duration="2014 to 2015"
             location="Milwaukee, Wisconsin"
             title="Developer"
             description="Creating and repairing databases in MS Access and SQL
@@ -143,18 +143,20 @@ function MainPage() {
           <ProficiencyBar title="Klingon" level={1} />
         </InfoButton>
 
-        {/****** Objectives ******/}
+        {/****** Objective ******/}
 
         <InfoButton
-          title="Objectives"
-          hide={curDisplay !== "Objectives"}
+          title="Objective"
+          hide={curDisplay !== "Objective"}
           onClick={handleClick}
         >
           <p className="info">
-            I am a logical, driven, quick learner with a passion for
-            programming. I want to find a company where I can enhance my
-            programming abilities while being a helpful asset to the company in
-            improving processes.
+            Developer with experience solving complex problems, learning new
+            concepts, and maximizing efficiency in projects as well as personal
+            workflow. Possess expertise in Full Stack Web Development including
+            frameworks such as React. Looking to enhance my knowledge and
+            experience into a role as Junior Developer in a company where I can
+            do the job that I love.
           </p>
         </InfoButton>
       </div>

@@ -1,5 +1,5 @@
 hr {
-  border: 1px solid var(--main-blue);
+  border: 1px solid var(--blue-gray);
   width: 75%;
 }
 
@@ -42,6 +42,17 @@ button:active {
   box-shadow: 0px 0px rgb(126, 147, 151);
   left: 4px;
   top: 4px;
+}
+
+button a {
+  color: var(--main-blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: var(--darker-blue);
+  text-decoration: none;
 }
 
 @media (max-width: 976px) {

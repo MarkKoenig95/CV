@@ -1,14 +1,14 @@
 /****************************************** Global *****************************************************/
 :root {
-  --main-green: rgb(48, 122, 23);
-  --darker-green: rgb(38, 107, 17);
-  --main-blue: rgb(66, 100, 95);
+  --main-blue: rgb(35, 88, 137);
+  --darker-blue: rgb(46, 117, 182);
+  --blue-gray: rgb(66, 100, 95);
   --tile-color: rgb(150, 174, 179);
 }
 
 /****************************************** Nav **************************************************************/
 nav {
-  background-color: var(--main-blue);
+  background-color: var(--blue-gray);
   padding: 0;
   margin: 0;
   text-align: right;
@@ -48,7 +48,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--main-green);
+  color: var(--main-blue);
   font-family: "Roboto Mono";
   font-weight: bold;
   margin: 8px 0px;
@@ -71,7 +71,7 @@ ul {
 
 ul.custom-dot li::before {
   content: "\2022";
-  color: var(--main-green);
+  color: var(--main-blue);
   display: inline-block;
   font-weight: bold;
   margin-left: -1rem;
@@ -110,12 +110,12 @@ a:hover {
 }
 
 .tile a {
-  color: var(--main-green);
+  color: var(--main-blue);
   font-weight: bold;
   text-decoration: none;
 }
 
 .tile a:hover {
-  color: var(--darker-green);
+  color: var(--darker-blue);
   text-decoration: none;
 }
