@@ -7,7 +7,7 @@ function PersonalInfo() {
       <div id="personal-info" className="tile">
         <img
           id="profile-pic"
-          src="./images/markkoenig.png"
+          src="./images/markkoenig.jpg"
           alt="Mark Koenig Profile"
         />
         <h1>Mark Richard Koenig</h1>
