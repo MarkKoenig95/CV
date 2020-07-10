@@ -11,6 +11,50 @@ function PortfolioPage() {
       </SectionTitle>
 
       <ProjectTile
+        title="Bible Study Companion"
+        sourceCodeLink="https://github.com/MarkKoenig95/bible-study-companion"
+      >
+        A React Native mobile application with a SQL database. The first release 
+        will allow users to automatically generate reading schedules based
+        on a desired scheudle type, number of years, and start verse. Then it will 
+        display information about the reading section and link to an online bible.
+        <br />
+        <br />
+        Future releases will feature a timeline of events and other notable dates
+        <br />
+        <br />
+        Things I have learned from this project:
+        <br />
+        I have been able to apply knowledge I have gained from watching MIT 
+        computer science courses. 
+        <br />
+        For instance, there was a SQL query which,
+        due to the data set being over 30,000 entries long, made schedule 
+        generation take around 2 seconds to run. Using memoization I was able  
+        to make the same process run in 0.2 seconds.
+        <br />
+        Additionally, I created my own search query algorithm which runs in 
+        O(log(n)) time.
+        <br />
+        <br />
+        I have also learned much about Git, and how to properly use version control. 
+        I also plan to learn better how to setup tests so that I can make sure the last 
+        commit on a branch does not have any major bugs. My current commit scheme is to 
+        interactively rebase a branch in order to squash all commits into one functioning 
+        commit so that the master branch never has any broken commits with major bugs.
+        <br />
+        <br />
+        Finally, in addition to this being the first project I have created with 
+        Reavt Native, and the largest project I have ever worked on. I have deepened 
+        my knowledge of React.js itself making use of useContext, useCallback, useReducer, 
+        and other hooks like these. 
+        <br />
+        <br />
+        This project has helped me grow beyond just making piecemeal projects, but has 
+        allowed me to work bit by bit on a larger scale project.
+      </ProjectTile>
+
+      <ProjectTile
         title="Meal Budget Planner"
         sourceCodeLink="https://github.com/MarkKoenig95/meal-budget-planner"
         liveLink="https://meal-budget-planner.herokuapp.com/"
