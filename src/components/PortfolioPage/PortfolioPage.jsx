@@ -20,7 +20,7 @@ function PortfolioPage() {
         display information about the reading section and link to an online bible.
         <br />
         <br />
-        Future releases will feature a timeline of events and other notable dates
+        Future releases will feature a timeline of events and other notable dates.
         <br />
         <br />
         Things I have learned from this project:
@@ -46,7 +46,7 @@ function PortfolioPage() {
         <br />
         Finally, in addition to this being the first project I have created with 
         Reavt Native, and the largest project I have ever worked on. I have deepened 
-        my knowledge of React.js itself making use of useContext, useCallback, useReducer, 
+        my knowledge of React.js itself making use of useCallback, useContext, useReducer, 
         and other hooks like these. 
         <br />
         <br />
@@ -59,7 +59,7 @@ function PortfolioPage() {
         sourceCodeLink="https://github.com/MarkKoenig95/meal-budget-planner"
         liveLink="https://meal-budget-planner.herokuapp.com/"
       >
-        A react based web app utilizing express to handle API requests and
+        A React.js based web app utilizing express to handle API requests and
         mongoDB for the database.
       </ProjectTile>
 
@@ -68,7 +68,7 @@ function PortfolioPage() {
         sourceCodeLink="https://github.com/MarkKoenig95/CV"
         liveLink="/CV/#/"
       >
-        This website was made with react. If you would like to see the source
+        This website was made with React.js. If you would like to see the source
         code for it please click the link.
       </ProjectTile>
 
@@ -80,7 +80,7 @@ function PortfolioPage() {
       >
         Software to set up a github webhook and pass information through AWS
         services in order to automatically mirror a repository to keybase. Of
-        all of the project I worked on for Code for Cash this is the only one I
+        all of the projects I worked on for Code for Cash this is the only one I
         am at liberty to share.
         <br />
         <br />
