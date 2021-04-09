@@ -1,11 +1,66 @@
 #personal-info {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
+  background-image: url("/images/background.JPG"),
+    linear-gradient(to left, rgb(80, 80, 80), rgb(180, 180, 180));
+  background-repeat: no-repeat;
+  color: var(--main-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 360px;
 }
 
-#profile-pic {
-  border-radius: 50%;
-  margin: auto;
-  width: 50%;
+.name-info {
+  background-image: linear-gradient(
+    rgb(255, 255, 255, 1),
+    rgb(255, 255, 255, 0)
+  );
+  padding: 0px 10px;
+  padding-bottom: 40px;
+}
+
+.professional-info {
+  align-items: center;
+  background-image: linear-gradient(
+    rgb(255, 255, 255, 0),
+    rgb(255, 255, 255, 1)
+  );
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.professional-info p {
+  align-items: center;
+  display: inline-flex;
+  font-weight: bold;
+  min-width: 16rem;
+}
+
+.professional-info a {
+  display: inline-block;
+}
+
+.links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.links img {
+  max-height: 2.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (min-width: 980px) {
+  #personal-info {
+    background-position: center;
+  }
 }

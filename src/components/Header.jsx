@@ -5,19 +5,15 @@ function Header() {
   return (
     <nav>
       <HashRouter basename="/">
-        <ul className="menu">
-          <li>
+        <div className="nav-menu">
+          <div className="nav-buttons">
             <Link to="/">Home</Link>
-          </li>
-          <li>
             <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <a href="./files/Mark Koenig Resume.pdf" download>
-              Download Resume
-            </a>
-          </li>
-        </ul>
+          </div>
+          <a href="./files/Mark Koenig Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
       </HashRouter>
     </nav>
   );

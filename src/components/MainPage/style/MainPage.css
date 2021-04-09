@@ -1,78 +1,71 @@
 hr {
-  border: 1px solid var(--blue-gray);
+  border: 1px solid var(--nav-bar);
   width: 75%;
 }
 
-/**************************************** Tile ****************************************/
+.accent-bar {
+  background-color: var(--accent);
+  height: 20px;
+  margin: 0px;
+  width: 100%;
+}
+
+.info-section-control {
+  background-color: var(--header);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-section-control button {
+  color: var(--section-color);
+  font-size: large;
+  font-weight: bold;
+  max-width: 8rem;
+}
+
+.current-button {
+  color: var(--accent) !important;
+}
+
+.summary {
+  background-color: var(--section-color);
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+}
 
 .info {
-  transition: max-width 0.2s ease-out;
-  height: auto;
-  max-width: 500px;
-  max-height: 600px;
+  background-color: var(--main);
+  transition: max-height 0.3s ease-out;
+  margin: auto;
+  max-width: 90%;
+  max-height: 50rem;
+}
+
+.info hr {
+  background-color: var(--accent);
+  height: 3px;
+  margin: 0px;
+  width: 100%;
 }
 
 .hide {
   max-height: 0;
-  max-width: 0;
   overflow: hidden;
 }
 
 button {
-  background-color: var(--tile-color);
+  background-color: rgb(0, 0, 0, 0);
   border: none;
-  border-radius: 7px;
-  box-shadow: 4px 4px rgb(126, 147, 151);
-  font: 15px "Montserrat";
   margin: 20px;
   outline: 0 none;
-  padding: 15px;
-  position: relative;
   text-align: left;
-  transition: none;
-}
-
-button:hover {
-  box-shadow: 2px 2px rgb(126, 147, 151);
-  left: 2px;
-  top: 2px;
-}
-
-button:active {
-  box-shadow: 0px 0px rgb(126, 147, 151);
-  left: 4px;
-  top: 4px;
-}
-
-button a {
-  color: var(--main-blue);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-button a:hover {
-  color: var(--darker-blue);
-  text-decoration: none;
-}
-
-@media (max-width: 976px) {
-  #personal-info {
-    margin: 2%;
-    width: 40%;
-  }
-  .tile {
-    margin: 2%;
-    width: 40%;
-  }
-}
-
-@media (max-width: 700px) {
-  #personal-info {
-    width: 90%;
-    margin: 2%;
-  }
-  .tile {
-    margin: 2%;
-    width: 90%;
-  }
 }

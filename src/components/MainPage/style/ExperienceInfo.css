@@ -2,6 +2,12 @@
   overflow: auto;
 }
 
+.experience-description {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
 h4 {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -9,18 +15,22 @@ h4 {
 
 p.job-duration {
   font-size: 1.2rem;
-  float: left;
   text-align: center;
   transform: translate(0%, 50%);
   width: 12%;
 }
 
 .job-info {
-  float: right;
   padding: 10px;
   width: 83%;
 }
 
 p.job-title {
   margin: 10px 0px;
+}
+
+.experience-title {
+  background-color: var(--accent);
+  border-radius: 5px;
+  text-align: center;
 }

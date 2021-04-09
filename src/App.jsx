@@ -10,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <img id="background-image" src="./images/CodeBackground.png" alt="" />
-      <div className="main-content">
+      <div>
         <HashRouter basename="/">
           <Switch>
             <Route exact path="/">

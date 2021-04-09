@@ -1,57 +1,61 @@
 /****************************************** Global *****************************************************/
 :root {
-  --main-blue: rgb(35, 88, 137);
-  --darker-blue: rgb(46, 117, 182);
-  --blue-gray: rgb(66, 100, 95);
-  --tile-color: rgb(150, 174, 179);
+  --accent: rgb(228, 155, 72);
+  --background: rgb(200, 200, 200);
+  --header: rgb(11, 79, 119);
+  --main-text: rgb(0, 0, 0);
+  --darker-accent: rgb(180, 118, 47);
+  --section-color: rgb(230, 230, 230);
 }
 
 /****************************************** Nav **************************************************************/
 nav {
-  background-color: var(--blue-gray);
+  background-color: var(--header);
   padding: 0;
   margin: 0;
   text-align: right;
   width: 100%;
 }
 
-ul.menu li {
-  display: inline;
+nav a {
+  color: var(--section-color);
+  margin: 10px;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+.nav-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   font-size: 1.3rem;
-  margin: 20px;
-  text-align: right;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 /****************************************** Body *********************************************************/
 
 body {
-  background-color: rgb(30, 37, 36);
-  color: rgb(206, 206, 206);
-  font: 15px "Montserrat";
+  background-color: var(--background);
+  color: var(--main-text);
+  font: 1rem;
   margin: 0;
   padding: 0;
 }
 
-#background-image {
-  position: absolute;
-  width: 97%;
-}
-
-.main-content {
-  position: relative;
-  top: 0;
-  width: 100%;
-}
-
 /****************************************** General ***********************************************/
 
-h1,
-h2,
-h3 {
-  color: var(--main-blue);
-  font-family: "Roboto Mono";
+a {
+  color: var(--darker-accent);
   font-weight: bold;
-  margin: 8px 0px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 p {
@@ -60,45 +64,32 @@ p {
 }
 
 ul {
-  list-style: none;
   padding: 10px;
   margin-top: 0px;
-}
-
-.tab {
-  margin: 10px 40px;
-}
-
-ul.custom-dot li::before {
-  content: "\2022";
-  color: var(--main-blue);
-  display: inline-block;
-  font-weight: bold;
-  margin-left: -1rem;
-  text-align: center;
-  width: 1rem;
+  margin-bottom: 0px;
+  margin-left: 10px;
 }
 
 img {
   margin: 10px;
 }
 
-a {
-  color: darkgray;
-  text-decoration: none;
-}
+/****************************************** Section ***********************************************/
 
-a:hover {
-  color: gray;
-  text-decoration: none;
+.section {
+  background-color: var(--section-color);
+  color: var(--main-text);
+  padding: 20px;
+  overflow: hidden;
+  text-align: left;
 }
 
 /****************************************** Tile ***********************************************/
 
 .tile {
-  background-color: var(--tile-color);
+  background-color: var(--section-color);
   border-radius: 7px;
-  color: black;
+  color: var(--main-text);
   float: left;
   margin: 15px;
   padding: 20px;
@@ -109,13 +100,11 @@ a:hover {
   max-width: 500px;
 }
 
-.tile a {
-  color: var(--main-blue);
-  font-weight: bold;
-  text-decoration: none;
-}
+/***************************************** Footer **********************************************/
 
-.tile a:hover {
-  color: var(--darker-blue);
-  text-decoration: none;
+footer {
+  background-color: var(--header);
+  color: var(--section-color);
+  display: flex;
+  justify-content: space-around;
 }
