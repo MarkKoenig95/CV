@@ -21,7 +21,7 @@ hr {
   color: var(--section-color);
   font-size: large;
   font-weight: bold;
-  max-width: 8rem;
+  max-width: 10rem;
 }
 
 .current-button {
