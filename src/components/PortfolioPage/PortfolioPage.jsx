@@ -129,16 +129,6 @@ function PortfolioPage() {
         </SectionTitle>
 
         <ProjectTile
-          title="Security and Authentication Example"
-          sourceCodeLink="https://github.com/MarkKoenig95/Security-and-Authorization"
-          liveLink="https://security-and-auth-example.herokuapp.com/"
-        >
-          An example project implementing passport, passport-local and
-          express-sessions in order to use OAuth2.0 verification processes,
-          cookies, as well as hashing passwords with salt rounds.
-        </ProjectTile>
-
-        <ProjectTile
           title="JQuery Simon Game"
           sourceCodeLink="https://github.com/MarkKoenig95/JQuery-Simon-Game"
           liveLink="https://markkoenig95.github.io/JQuery-Simon-Game/"
@@ -146,6 +136,16 @@ function PortfolioPage() {
           A simple web based game. Although the styling and sounds were provided
           I implemented all of the logic myself and even improved some aspects
           of the original idea.
+        </ProjectTile>
+
+        <ProjectTile
+          title="Security and Authentication Example"
+          sourceCodeLink="https://github.com/MarkKoenig95/Security-and-Authorization"
+          liveLink="https://security-and-auth-example.herokuapp.com/"
+        >
+          An example project implementing passport, passport-local and
+          express-sessions in order to use OAuth2.0 verification processes,
+          cookies, as well as hashing passwords with salt rounds.
         </ProjectTile>
 
         <ProjectTile

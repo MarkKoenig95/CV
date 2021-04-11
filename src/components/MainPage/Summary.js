@@ -9,8 +9,8 @@ export default function Summary() {
         concepts, and maximizing efficiency in projects as well as personal
         workflow. Possess expertise in Full Stack Web Development including
         frameworks such as React. Looking to enhance my knowledge and experience
-        into a role as Junior Developer in a company where I can do the job that
-        I love.
+        in a role as Junior Developer at a company where I can do the job that I
+        love.
       </p>
     </div>
   );

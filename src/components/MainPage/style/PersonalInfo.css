@@ -1,6 +1,11 @@
 #personal-info {
   background-image: url("/images/background.JPG"),
-    linear-gradient(to left, rgb(80, 80, 80), rgb(180, 180, 180));
+    linear-gradient(
+      to left,
+      rgb(100, 100, 100),
+      rgb(70, 70, 70),
+      rgb(190, 190, 190)
+    );
   background-repeat: no-repeat;
   color: var(--main-text);
   display: flex;
