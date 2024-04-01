@@ -9,12 +9,6 @@ export default function PersonalInfo() {
       </div>
       <div className="professional-info">
         <div className="links">
-          <a
-            href="https://stackoverflow.com/users/12074043/markark"
-            title="StackOverflow"
-          >
-            <img src="./images/StackOverflow-Logo.png" alt="" />
-          </a>
           <a href="https://github.com/MarkKoenig95" className="github-icon">
             <img src="./images/GitHub-Logo.png" alt="" />
           </a>
@@ -26,7 +20,7 @@ export default function PersonalInfo() {
           </a>
         </div>
         <div className="contact-info">
-          <p>Phone: +1-(262)-910-4091</p>
+          <p>Phone: +1-(262)-332-9727</p>
           <p>Email: Markkoenig95@gmail.com</p>
         </div>
       </div>

@@ -65,6 +65,34 @@ function PortfolioPage() {
         </ProjectTile>
 
         <ProjectTile
+          title="Good As New Soft Washing Website"
+          sourceCodeLink="https://github.com/MarkKoenig95/good-as-new-softwashing"
+          liveLink="https://markkoenig95.github.io/good-as-new-softwashing/"
+        >
+          A website for a company that provided softwashing services. This was
+          built with React.js and bootstrap.
+          <br />
+          <br />
+          This company has since ceased their activities and gotten rid of their
+          domain so I am now hosting it on my GitHub profile through GitHub
+          Pages
+        </ProjectTile>
+
+        <ProjectTile
+          title="Darby Koenig CV Website"
+          sourceCodeLink="https://github.com/MarkKoenig95/darby-koenig-cv"
+          liveLink="https://www.darbyk.com"
+        >
+          A CV website to showcase my wife's UI design ability.
+          <br />
+          <br />
+          This is a fairly simple website created with React.js. The most
+          technical part of the website is the bouncing buttons on the home
+          screen which took a little time to balance out the parameters to get
+          it to look right.
+        </ProjectTile>
+
+        <ProjectTile
           title="Bible Study Companion Website"
           sourceCodeLink="https://github.com/MarkKoenig95/bible-study-companion-website"
           liveLink="https://www.biblesc.com"

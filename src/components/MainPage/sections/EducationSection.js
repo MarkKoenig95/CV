@@ -4,7 +4,7 @@ import InfoSection from "./InfoSection";
 export default function EducationSection({ hide, title }) {
   return (
     <InfoSection hide={hide} title={title}>
-      <h3>June 2020 - Current | MIT Lectures</h3>
+      <h3>June 2019 - Current | MIT Lectures</h3>
       <ul>
         <li>
           Watching MIT lectures on their open courseware site following required
